@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Assistant:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/app.css">
+</head>
+<body>
+
+
+<div class="wrapper">
+
+  <header class="header">
+    <div class="container">
+      <div class="header__row">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <img src="src/img/logo.svg" alt="superpoint">
+          </a>
+        </div>
+
+        <div class="info-wrapper">
+          <a href="#" class="info-item">
+            <svg class="info-item__icn">
+              <use xlink:href="../src/img/svg-sprite.svg#fb"></use>
+            </svg>
+
+            <span class="info-item__text">Feedback</span>
+          </a>
+
+          <a href="#" class="info-item">
+            <svg class="info-item__icn">
+              <use xlink:href="../src/img/svg-sprite.svg#help"></use>
+            </svg>
+
+            <span class="info-item__text">Help</span>
+          </a>
+        </div>
+
+        <div class="user">
+          <span class="user__name">John Johnson</span>
+
+          <ul class="user-menu">
+            <li class="user-menu__item">
+              <a href="#" class="user-menu__link">Item 1</a>
+            </li>
+            <li class="user-menu__item">
+              <a href="#" class="user-menu__link">Item 2</a>
+            </li>
+            <li class="user-menu__item">
+              <a href="#" class="user-menu__link">Item 3</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="logo-double">
+          <a href="#" class="logo-double__link">
+            <img src="src/img/logo2.svg" alt="logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <nav class="nav-menu">
+      <button class="nav-menu__btn"></button>
+
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a href="#" class="nav-link active">
+            <svg class="nav-link__icon">
+              <use xlink:href="../src/img/svg-sprite.svg#nav-1"></use>
+            </svg>
+
+            <span class="nav-link__title">Point 1</span>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="nav-link">
+            <svg class="nav-link__icon">
+              <use xlink:href="../src/img/svg-sprite.svg#nav-2"></use>
+            </svg>
+
+            <span class="nav-link__title">Point 2</span>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="nav-link">
+            <svg class="nav-link__icon">
+              <use xlink:href="../src/img/svg-sprite.svg#nav-3"></use>
+            </svg>
+
+            <span class="nav-link__title">Point 3</span>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="nav-link">
+            <svg class="nav-link__icon">
+              <use xlink:href="../src/img/svg-sprite.svg#nav-4"></use>
+            </svg>
+
+            <span class="nav-link__title">Point 4</span>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="nav-link">
+            <svg class="nav-link__icon">
+              <use xlink:href="../src/img/svg-sprite.svg#nav-5"></use>
+            </svg>
+
+            <span class="nav-link__title">Point 5</span>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="nav-link">
+            <svg class="nav-link__icon">
+              <use xlink:href="../src/img/svg-sprite.svg#nav-6"></use>
+            </svg>
+
+            <span class="nav-link__title">Point 6</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="progress">
+      <div class="container">
+        <div class="progress-box">
+          <div class="line"></div>
+
+          <div class="progress-box-item">
+            <div class="progress-box-item__icon active">
+              <svg class="progress-box__svg active">
+                <use xlink:href="../src/img/svg-sprite.svg#step-1"></use>
+              </svg>
+            </div>
+
+            <div class="progress-box-item__text active">1. Step</div>
+          </div>
+
+          <div class="progress-box-item">
+            <div class="progress-box-item__icon active">
+              <svg class="progress-box__svg active">
+                <use xlink:href="../src/img/svg-sprite.svg#step-2"></use>
+              </svg>
+            </div>
+
+            <div class="progress-box-item__text active">2. Step</div>
+          </div>
+
+          <div class="progress-box-item">
+            <div class="progress-box-item__icon current">
+              <svg class="progress-box__svg current">
+                <use xlink:href="../src/img/svg-sprite.svg#step-3"></use>
+              </svg>
+            </div>
+
+            <div class="progress-box-item__text current">3. Step</div>
+          </div>
+
+          <div class="progress-box-item">
+            <div class="progress-box-item__icon">
+              <svg class="progress-box__svg">
+                <use xlink:href="../src/img/svg-sprite.svg#step-4"></use>
+              </svg>
+            </div>
+
+            <div class="progress-box-item__text">4. Step</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="table">
+      <div class="container">
+        <div class="form__scroll">
+          <form class="form">
+            <div class="form__row">
+              <div class="form-head">
+                <h2 class="form-head__title main">Shipper Details</h2>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form-search">
+                <input class="form-search__field" type="text" placeholder="Company Autocomplete" required>
+
+                <button class="form-search__btn">
+                  <svg>
+                    <use xlink:href="../src/img/svg-sprite.svg#loupe"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="form-search hint">
+                <input class="form-search__field" type="text" value="Urban Space" required>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form-head">
+                <h2 class="form-head__title">Shipment Details</h2>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form-title">
+                <div class="form-title__item cell-1"><span>Handling Unit Type (H/U)</span></div>
+                <div class="form-title__item cell-2"><span># of H/U</span></div>
+                <div class="form-title__item cell-3"><span>H/U Dimensions</span></div>
+                <div class="form-title__item cell-4"><span>Stackable</span></div>
+                <div class="form-title__item cell-5"><span>Commodity Descriprion</span></div>
+                <div class="form-title__item cell-6"><span>NMFC</span></div>
+                <div class="form-title__item cell-7"><span>Class</span></div>
+                <div class="form-title__item cell-8"><span># of Pieces</span></div>
+                <div class="form-title__item cell-9"><span>Total Weight</span></div>
+                <div class="form-title__item cell-10"><span>HazMat</span></div>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form-body">
+                <div class="form-body__row">
+                  <div class="form-body__item cell-1">Pallets</div>
+                  <div class="form-body__item cell-2">3</div>
+                  <div class="form-body__item cell-3">15 х 25 х 23 in</div>
+                  <div class="form-body__item cell-4">Yes</div>
+                  <div class="form-body__item cell-5">
+                    <div class="form-search full">
+                      <input class="form-search__field" type="text" placeholder="Company Autocomplete" required>
+
+                      <button class="form-search__btn">
+                        <svg>
+                          <use xlink:href="../src/img/svg-sprite.svg#loupe"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form-body__item cell-6">
+                    <input type="text" class="form__field small" placeholder="NMFC" required>
+                  </div>
+                  <div class="form-body__item cell-7">1</div>
+                  <div class="form-body__item cell-8">1</div>
+                  <div class="form-body__item cell-9">400 lbs</div>
+                  <div class="form-body__item cell-10">
+                    <div class="check">
+                      <input id="check1" class="check__field" type="checkbox" required>
+
+                      <label class="check__label" for="check1"></label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-body__row offset bordered">
+                  <div class="form-body__item cell-5">
+                    <div class="form-search full">
+                      <input class="form-search__field" type="text" placeholder="Company Autocomplete" required>
+
+                      <button class="form-search__btn">
+                        <svg>
+                          <use xlink:href="../src/img/svg-sprite.svg#loupe"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form-body__item cell-6">
+                    <input type="text" class="form__field small" placeholder="NMFC" required>
+                  </div>
+                  <div class="form-body__item cell-7">1</div>
+                  <div class="form-body__item cell-8">1</div>
+                  <div class="form-body__item cell-9">400 lbs</div>
+                  <div class="form-body__item cell-10">
+                    <div class="check">
+                      <input id="check2" class="check__field" type="checkbox" required>
+
+                      <label class="check__label" for="check2"></label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-body__row offset">
+                  <div class="form-body__item cell-11">
+                    <div class="select" data-type="select">
+                      <span class="select__head">UN</span>
+                      <ul class="select__list">
+                        <li class="select__item">RUS</li>
+                        <li class="select__item">EN</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="form-body__item cell-12">
+                    <input type="text" class="form__field" placeholder="UN Number" required>
+                  </div>
+
+                  <div class="form-body__item cell-13">
+                    <input type="text" class="form__field" placeholder="Proper Shipping Name" required>
+                  </div>
+
+                  <div class="form-body__item cell-14">
+                    <input type="text" class="form__field" placeholder="Hazard Class" required>
+                  </div>
+
+                  <div class="form-body__item cell-15">
+                    <div class="form-body__item">
+                      <div class="select" data-type="select">
+                        <span class="select__head">Packing Group</span>
+                        <ul class="select__list">
+                          <li class="select__item">Packing Group 1</li>
+                          <li class="select__item">Packing Group 2</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-body__item cell-15">
+                    <div class="form-body__item">
+                      <div class="select" data-type="select">
+                        <span class="select__head">Packing Type</span>
+                        <ul class="select__list">
+                          <li class="select__item">Packing Type 1</li>
+                          <li class="select__item">Packing Type 2</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="form-body__row">
+                  <div class="form-body__item cell-1">Pallets</div>
+                  <div class="form-body__item cell-2">3</div>
+                  <div class="form-body__item cell-3">15 х 25 х 23 in</div>
+                  <div class="form-body__item cell-4">No</div>
+                  <div class="form-body__item cell-5">
+                    <div class="form-search full">
+                      <input class="form-search__field" type="text" placeholder="Company Autocomplete" required>
+
+                      <button class="form-search__btn">
+                        <svg>
+                          <use xlink:href="../src/img/svg-sprite.svg#loupe"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form-body__item cell-6">
+                    <input type="text" class="form__field small" placeholder="NMFC" required>
+                  </div>
+                  <div class="form-body__item cell-7">1</div>
+                  <div class="form-body__item cell-8">1</div>
+                  <div class="form-body__item cell-9">400 lbs</div>
+                  <div class="form-body__item cell-10">
+                    <div class="check">
+                      <input id="check3" class="check__field" type="checkbox" required>
+
+                      <label class="check__label" for="check3"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form-agree">
+                <div class="check">
+                  <input id="check4" class="check__field" type="checkbox" required>
+
+                  <label class="check__label" for="check4"></label>
+                </div>
+
+                <div class="form-agree__text">
+                  I agree to the <a href="#">Terms and Conditions</a>
+                </div>
+              </div>
+
+              <button type="submit">Dispatch</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</div>
+
+<script src="/dist/app.js"></script>
+</body>
+</html>
