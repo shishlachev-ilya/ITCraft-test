@@ -8,7 +8,8 @@
 
 ## About test work
 
-Test work on the position of HTML-coder
+Test work on the position of HTML-coder.  
+
 This work was done using:
 
 +	HTML5
@@ -26,12 +27,12 @@ This work was done using:
 
 Please ensure that the release file is unpacked in a directory accessible via the Internet. You will see the following files and directories.
 
-	src/					project root folder
-	src/img				folder for images
-	src/sass			folder for SASS style
-	src/js				folder for JavaScript files
+	src/	project root folder
+	src/img  folder for images
+	src/sass	folder for SASS style
+	src/js	folder for JavaScript files
 	src/index.js	webpack entry point
-	index.html		project start page
+	index.html	project start page
 
 
 ## Requirements
@@ -64,5 +65,5 @@ Run build for production
 
 ## Contacts
 
-*	[linkedin](https://www.linkedin.com/in/shishlachevilya/)
+*	[LinkedIn](https://www.linkedin.com/in/shishlachevilya/)
 *	[shishlachevilya@gmail.com](shishlachevilya@gmail.com)
