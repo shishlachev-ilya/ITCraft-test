@@ -178,37 +178,37 @@
 
     <section class="table">
       <div class="container">
-        <div class="form__scroll">
-          <form class="form">
-            <div class="form__row">
-              <div class="form-head">
-                <h2 class="form-head__title main">Shipper Details</h2>
-              </div>
+        <form class="form">
+          <div class="form__row">
+            <div class="form-head">
+              <h2 class="form-head__title main">Shipper Details</h2>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form-search">
+              <input class="form-search__field" type="text" placeholder="Company Autocomplete" required>
+
+              <button class="form-search__btn">
+                <svg>
+                  <use xlink:href="../src/img/svg-sprite.svg#loupe"></use>
+                </svg>
+              </button>
             </div>
 
-            <div class="form__row">
-              <div class="form-search">
-                <input class="form-search__field" type="text" placeholder="Company Autocomplete" required>
-
-                <button class="form-search__btn">
-                  <svg>
-                    <use xlink:href="../src/img/svg-sprite.svg#loupe"></use>
-                  </svg>
-                </button>
-              </div>
-
-              <div class="form-search hint">
-                <input class="form-search__field" type="text" value="Urban Space" required>
-              </div>
+            <div class="form-search hint">
+              <input class="form-search__field" type="text" value="Urban Space" required>
             </div>
+          </div>
 
-            <div class="form__row">
-              <div class="form-head">
-                <h2 class="form-head__title">Shipment Details</h2>
-              </div>
+          <div class="form__row">
+            <div class="form-head">
+              <h2 class="form-head__title">Shipment Details</h2>
             </div>
+          </div>
 
-            <div class="form__row">
+          <div class="form__scroll">
+            <div class="form__row scrolled">
               <div class="form-title">
                 <div class="form-title__item cell-1"><span>Handling Unit Type (H/U)</span></div>
                 <div class="form-title__item cell-2"><span># of H/U</span></div>
@@ -223,7 +223,7 @@
               </div>
             </div>
 
-            <div class="form__row">
+            <div class="form__row scrolled">
               <div class="form-body">
                 <div class="form-body__row">
                   <div class="form-body__item cell-1">Pallets</div>
@@ -364,24 +364,24 @@
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="form__row">
-              <div class="form-agree">
-                <div class="check">
-                  <input id="check4" class="check__field" type="checkbox" required>
+          <div class="form__row">
+            <div class="form-agree">
+              <div class="check">
+                <input id="check4" class="check__field" type="checkbox" required>
 
-                  <label class="check__label" for="check4"></label>
-                </div>
-
-                <div class="form-agree__text">
-                  I agree to the <a href="#">Terms and Conditions</a>
-                </div>
+                <label class="check__label" for="check4"></label>
               </div>
 
-              <button type="submit">Dispatch</button>
+              <div class="form-agree__text">
+                I agree to the <a href="#">Terms and Conditions</a>
+              </div>
             </div>
-          </form>
-        </div>
+
+            <button type="submit">Dispatch</button>
+          </div>
+        </form>
       </div>
     </section>
   </main>
