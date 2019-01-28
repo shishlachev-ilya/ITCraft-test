@@ -2,9 +2,11 @@
   <img width="300" src="https://i.pinimg.com/736x/b1/f7/5e/b1f75ec4b9a69ad6d008e880fe12cd23.jpg">
 </p>
 
-# Тестова работа выполненная для компании IT Craft
+<h1 style="border-bottom:none;text-align:center;">Тестова работа выполненная для компании IT Craft</h1>
 
 ---
+
+
 
 ## Структура проекта
 
@@ -49,4 +51,4 @@
 ## Контакты
 
 [linkedin](https://www.linkedin.com/in/shishlachevilya/)
-[email](shishlachevilya@gmail.com)
+[shishlachevilya@gmail.com](shishlachevilya@gmail.com)
