@@ -49,7 +49,7 @@ The minimum requirement for running a project is node.js v.8.9.2 and npm v.6.5.0
 
 Clone VCS project -> Checkout from version control -> GitHub
 
-	git clone https://github.com/shishlachev-ilya/craft-test.git
+	git clone https://github.com/shishlachev-ilya/ITCraft-test.git
 
 Install dependencies
 	
