@@ -1,5 +1,5 @@
 //import js
-import './js/common'
+import './js/toggle'
 import './js/select'
 
 //import style
