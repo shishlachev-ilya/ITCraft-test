@@ -1,14 +1,13 @@
 let Select = function (node) {
     let self = this;
     self.node = node;
-    select.dropDownList = [];
+    self.dropDownList = [];
     self.selectHead = "";
 
     let allItemsDownList = self.node.querySelectorAll(".select__item");
 
-
     self.init = function () {
-        select.dropDownList = self.node.querySelector(".select__list");
+        self.dropDownList = self.node.querySelector(".select__list");
         self.selectHead = self.node.querySelector(".select__head");
 
         self.addListeners();
@@ -22,7 +21,7 @@ let Select = function (node) {
             });
         });
 
-        select.dropDownList.addEventListener("click", function (event) {
+        self.dropDownList.addEventListener("click", function (event) {
             self.changeText(event.target);
         });
 
@@ -47,7 +46,7 @@ let Select = function (node) {
      */
 
     self.close = function () {
-        select.dropDownList.classList.remove("open");
+        self.dropDownList.classList.remove("open");
         self.selectHead.classList.remove("arrow-up");
     };
 
