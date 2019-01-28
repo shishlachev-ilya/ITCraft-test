@@ -1,4 +1,6 @@
-![логотип](https://i.pinimg.com/736x/b1/f7/5e/b1f75ec4b9a69ad6d008e880fe12cd23.jpg)
+<p align="center">
+  <img width="300" src="https://i.pinimg.com/736x/b1/f7/5e/b1f75ec4b9a69ad6d008e880fe12cd23.jpg">
+</p>
 
 # Тестова работа выполненная для компании IT Craft
 
@@ -13,6 +15,8 @@
 	src/img		папка в которой находятся изображения
 	src/sass	папка в которой находятся SASS-стили
 	src/index.js	точка входа в webpack
+	index.html	стартовая страница проекта
+
 
 ## Требования
 
@@ -45,3 +49,4 @@
 ## Контакты
 
 [linkedin](https://www.linkedin.com/in/shishlachevilya/)
+[email](shishlachevilya@gmail.com)
