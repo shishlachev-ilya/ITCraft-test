@@ -66,14 +66,14 @@
         &.active
             border-right: 2px solid $orangeColor
 
-            .nav-link__icon
+            .nav-link__icon svg
                 fill: $orangeColor
 
             .nav-link__title
                 color: $orangeColor
 
         &:hover
-            .nav-link__icon
+            .nav-link__icon svg
                 fill: $orangeColor
 
             .nav-link__title
@@ -86,8 +86,11 @@
             flex-shrink: 0
             width: 20px
             height: 20px
-
-            fill: $navColor
+            
+            svg
+                width: 100%
+                height: 100%
+                fill: $navColor
 
         &__title
             margin: 0 0 0 15px
