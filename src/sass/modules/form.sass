@@ -1,0 +1,333 @@
+//form style
+.form
+    margin: 0 0 50px
+
+    @media screen and (min-width: $laptop)
+        width: 100%
+
+    &__row
+        display: flex
+
+        &:last-child
+            flex-direction: column
+            align-items: flex-end
+            margin: 0
+
+        &.scrolled
+            width: 1286px
+
+            @media screen and (min-width: $laptop)
+                width: 100%
+
+    &__scroll
+        overflow-x: auto
+        overflow-y: visible
+
+        @media screen and (min-width: $laptop)
+            overflow-x: visible
+
+    &-head
+        &__title
+            display: inline-flex
+            margin: 0
+
+            +font(16px, 300, $blueColor)
+
+            border-bottom: 1px solid $orangeColor
+
+            &.main
+                font-weight: 400
+
+    &-search
+        position: relative
+
+        display: inline-flex
+        width: 300px
+        margin: 28px 20px 34px 0
+
+        &.full
+            width: 100%
+            margin: 0 20px 0 0
+
+        &.hint:before
+            content: 'Company name'
+            position: absolute
+            top: -20px
+            left: 0
+
+            +font(12px, 300, $grayColor)
+
+        &__field
+            position: relative
+
+            display: inline-flex
+            width: 100%
+            padding: 0 30px 0 0
+
+            +font(16px, 300, $greyDarkColor)
+            letter-spacing: -.7px
+
+            border: none
+            border-bottom: 1px solid $greyDarkColor
+            outline: none
+
+            +placeholder
+                color: $placeholder
+
+            +focus
+                opacity: 0
+
+        &__btn
+            position: absolute
+            bottom: 5px
+            right: 5px
+
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 20px
+            height: 20px
+            padding: 0
+
+            border: none
+            outline: none
+            background-color: transparent
+            cursor: pointer
+
+            svg
+                width: 15px
+                height: 15px
+                fill: #6F6C69
+
+    &-title
+        display: flex
+        justify-content: space-between
+        width: 100%
+        padding: 5px 0
+
+        border-bottom: 1px solid $borderTable
+
+        &__item
+            span
+                +font(14px, 300, $grayColor)
+
+    &-body
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        width: 100%
+
+        border-bottom: 1px solid $borderTable
+
+        &__row
+            display: flex
+            justify-content: space-between
+            width: 100%
+            padding: 16px 0 40px
+
+            &.offset
+                width: calc(100% - 465px)
+                padding: 16px 0
+
+            &.bordered
+                padding: 0 0 20px 0
+                margin: 0 0 14px
+
+                border-bottom: 1px solid $borderTable
+
+        &__item
+            +font(16px, 300, $greyDarkColor)
+
+        .form__field
+            display: inline-flex
+            width: 100%
+
+            +font(16px, 300, $greyDarkColor)
+
+            border: none
+            border-bottom: 1px solid $greyDarkColor
+            outline: none
+
+            +placeholder
+                font-size: 14px
+                color: $placeholder
+
+            +focus
+                opacity: 0
+
+            &.small
+                width: 40px
+                text-transform: uppercase
+
+.cell
+
+    &-1
+        flex: 0 1 170px
+
+    &-2
+        flex: 0 1 75px
+
+    &-3
+        flex: 0 1 140px
+
+    &-4
+        flex: 0 1 80px
+
+    &-5
+        flex: 1 1 auto
+        padding: 0 30px 0 0
+
+    &-6
+        flex: 0 1 65px
+
+    &-7
+        flex: 0 1 60px
+
+    &-8
+        flex: 0 1 90px
+
+    &-9
+        flex: 0 1 100px
+
+    &-10
+        flex: 0 1 50px
+
+    &-11
+        flex: 0 1 50px
+
+    &-12
+        flex: 0 1 100px
+
+    &-13
+        flex: 0 1 215px
+
+    &-14
+        flex: 0 1 140px
+
+    &-15
+        flex: 0 1 120px
+
+.bordered
+    border-bottom: 1px solid $borderTable
+
+.check
+    .check__label
+        position: relative
+
+        display: flex
+        width: 20px
+        height: 20px
+        margin: auto
+
+        border: 1px solid $grayColor
+        cursor: pointer
+        user-select: none
+
+    &__field
+        display: none
+
+        &:checked + .check__label
+            border-color: transparent
+            background-image: url("../img/check.svg")
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 20px
+
+.select
+    position: relative
+
+    display: flex
+    width: 100%
+
+    &__head
+        display: flex
+        width: 100%
+        padding: 0 0 2px
+
+        +font(15px, 300, $greyDarkColor)
+
+        border-bottom: 1px solid $greyDarkColor
+        background-image: url("../img/select-arrow.svg")
+        background-repeat: no-repeat
+        background-position: center right
+        cursor: pointer
+
+        &.arrow-up
+            background-image: url("../img/select-top.svg")
+
+    &__list
+        position: absolute
+        top: 100%
+        left: 0
+        z-index: 1
+
+        display: none
+        width: 100%
+        padding: 10px 0
+        margin: 0
+
+        box-shadow: 0 0 5px rgba(0, 0, 0, .15)
+        background-color: $whiteColor
+
+        &.open
+            display: block
+
+    &__item
+        padding: 5px 0
+
+        +font(16px, 300, $greyDarkColor)
+        text-align: center
+
+        list-style: none
+        cursor: pointer
+
+.form-agree
+    display: flex
+    margin: 20px 0 0
+
+    &__text
+        padding: 0 0 0 15px
+
+        +font(14px, 300, $greyDarkColor)
+
+        a
+            color: $blueColor
+
+button[type="submit"]
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 220px
+    height: 40px
+    margin: 20px 0 0
+    padding: 0
+
+    +font(16px, 400, $whiteColor)
+    text-transform: uppercase
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, .15)
+    background-color: $submitBtn
+    border-radius: 3px
+    outline: none
+    border: none
+    cursor: pointer
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

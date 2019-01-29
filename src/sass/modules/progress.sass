@@ -1,93 +1,93 @@
 //progress style
 .progress
-	padding: 23px 0 26px
-	
-	&-box
-		position: relative
-		
-		display: flex
-		width: 100%
-		justify-content: space-between
-		
-		@media (min-width: $medium)
-			padding: 0 0 0 12%
-		
-		@media (min-width: $extra)
-			padding: 0 0 0 170px
-		
-		&:before
-			content: ""
-			position: absolute
-			top: 50%
-			left: 0
-			width: 100%
-			height: 1px
-			background-color: $grayColor
-		
-		& .line
-			position: absolute
-			top: 50%
-			left: 0
+    padding: 23px 0 26px
+
+    &-box
+        position: relative
+
+        display: flex
+        width: 100%
+        justify-content: space-between
+
+        @media (min-width: $medium)
+            padding: 0 0 0 12%
+
+        @media (min-width: $extra)
+            padding: 0 0 0 170px
+
+        &:before
+            content: ""
+            position: absolute
+            top: 50%
+            left: 0
+            width: 100%
+            height: 1px
+            background-color: $grayColor
+
+        & .line
+            position: absolute
+            top: 50%
+            left: 0
 			
-			height: 2px
-			background-color: $blueColor
-			
-			@media screen and (min-width: $medium)
-				width: calc(60% + 80px)
-			
-			@media screen and (min-width: $large)
-				width: calc(60% + 100px)
-			
-			@media screen and (min-width: $extra)
-				width: calc(60% + 135px)
-			
-			@media screen and (min-width: $desktop)
-				width: calc(60% + 160px)
-		
-		&-item
-			position: relative
-			z-index: 1
-			
-			&__icon
-				display: flex
-				justify-content: center
-				align-items: center
-				flex-shrink: 0
-				width: 30px
-				height: 30px
-				
-				background-color: $whiteColor
-				border: 1px solid $grayColor
-				border-radius: 50%
-				
-				&.active
-					background-color: $blueColor
-					border-color: $blueColor
-				
-				&.current
-					border: 2px solid $blueColor
-			
-			&__text
-				position: absolute
-				top: -10px
-				left: -50px
-				
-				+font(16px, 400, $grayColor)
-				
-				&.active
-					color: $blueColor
-				
-				&.current
-					color: $blueColor
-		
-		&__svg
-			width: 18px
-			height: 14px
-			
-			fill: $grayColor
-			
-			&.active
-				fill: $whiteColor
-			
-			&.current
-				fill: $blueColor
+            height: 2px
+            background-color: $blueColor
+
+            @media screen and (min-width: $medium)
+                width: calc(60% + 80px)
+
+            @media screen and (min-width: $large)
+                width: calc(60% + 100px)
+
+            @media screen and (min-width: $extra)
+                width: calc(60% + 135px)
+
+            @media screen and (min-width: $desktop)
+                width: calc(60% + 160px)
+
+        &-item
+            position: relative
+            z-index: 1
+
+            &__icon
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-shrink: 0
+                width: 30px
+                height: 30px
+
+                background-color: $whiteColor
+                border: 1px solid $grayColor
+                border-radius: 50%
+
+                &.active
+                    background-color: $blueColor
+                    border-color: $blueColor
+
+                &.current
+                    border: 2px solid $blueColor
+
+            &__text
+                position: absolute
+                top: -10px
+                left: -50px
+
+                +font(16px, 400, $grayColor)
+
+                &.active
+                    color: $blueColor
+
+                &.current
+                    color: $blueColor
+
+        &__svg
+            width: 18px
+            height: 14px
+
+            fill: $grayColor
+
+            &.active
+                fill: $whiteColor
+
+            &.current
+                fill: $blueColor

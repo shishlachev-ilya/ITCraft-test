@@ -1,49 +1,112 @@
-let Select = function () {
+let Select = function (node) {
 
-  return {
-    getSelectHead: function () {
-      let allSelectHead = document.querySelectorAll(".select__head");
+    let obj = {
 
-      allSelectHead.forEach(function (item) {
-        item.addEventListener("click", function (event) {
-          // this.openDropList(item);
-          console.log(event.target);
-        });
-      });
-    },
+        node: node,
 
-    getDropMenuItem: function () {
-      let allDropMenuItem = document.querySelectorAll(".select__item");
+        /**
+         * Returns a select box header
+         * @returns {Element}
+         */
 
-      allDropMenuItem.forEach(function (item) {
-        item.addEventListener("click", function () {
-          this.changeHead(item);
-        });
-      });
-    },
+        getSelectHead: function () {
+            return node.querySelector(".select__head");
+        },
 
-    openDropList: function (item) {
-      item.nextElementSibling.classList.add("open");
-    },
+        /**
+         * Returns a drop-down list
+         * @returns {Element}
+         */
 
-    closeDropList: function () {
+        getDropMenu: function () {
+            return node.querySelector(".select__list");
+        },
 
-    },
+        /**
+         * Shows the drop-down list when clicking on the title and rotate arrow
+         * Calls a method to iterate drop-down list items
+         */
 
-    changeHead: function (item) {
-      console.log(item.innerHeight);
-    },
+        openDropMenu: function () {
+            obj.getSelectHead().addEventListener("click", function () {
+                obj.getDropMenu().classList.toggle("open");
+                obj.getSelectHead().classList.toggle("arrow-up");
+            });
 
-    init: function () {
-      this.getSelectHead();
-      // this.getDropMenuItem();
-    }
-  }
+            obj.getItemsDropMenu();
+            obj.outsitdeClose();
+        },
+
+        /**
+         * Hidden the drop-down list
+         */
+
+        closeDropMenu: function () {
+            obj.getDropMenu().classList.remove("open");
+            obj.getSelectHead().classList.remove("arrow-up");
+        },
+
+        /**
+         * Iterate the drop-down list items and calls the method for changeText each
+         */
+
+        getItemsDropMenu: function () {
+            let items = obj.getDropMenu().querySelectorAll(".select__item");
+
+            [].forEach.call(items, function (item) {
+                item.addEventListener("click", obj.changeText);
+            });
+        },
+
+        /**
+         * Takes the value of the current element and changes the title
+         * @param event
+         */
+
+        changeText: function (event) {
+            let currentText = event.target.innerHTML;
+            obj.getSelectHead().innerHTML = currentText;
+            obj.closeDropMenu();
+        },
+
+        /**
+         * Closes the menu if you do not choose any items drop-list menu
+         */
+
+        outsitdeClose: function () {
+            document.addEventListener("click", function (event) {
+                let e = node;
+
+                if (!e.contains(event.target)) {
+                    obj.closeDropMenu()
+                }
+            });
+        },
+
+        /**
+         * Entry point
+         */
+
+        init: function () {
+            obj.openDropMenu();
+        }
+
+    };
+
+    return {
+        init: obj.init
+    };
+
 };
 
-let allSelect = document.querySelectorAll("[data-type=\"select\"]");
+/**
+ * Iterate all select box and create new object for each
+ * @type {NodeList}
+ */
 
-allSelect.forEach(function (item) {
-  let select = new Select(item);
-  select.init();
+let allSelects = document.querySelectorAll('[data-type="select"]');
+
+[].forEach.call(allSelects, function (select) {
+    let sel = new Select(select);
+    sel.init();
 });
