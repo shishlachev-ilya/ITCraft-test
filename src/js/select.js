@@ -8,7 +8,6 @@ let Select = function (node) {
          * Returns a select box header
          * @returns {Element}
          */
-
         getSelectHead: function () {
             return node.querySelector(".select__head");
         },
@@ -17,7 +16,6 @@ let Select = function (node) {
          * Returns a drop-down list
          * @returns {Element}
          */
-
         getDropMenu: function () {
             return node.querySelector(".select__list");
         },
@@ -26,7 +24,6 @@ let Select = function (node) {
          * Shows the drop-down list when clicking on the title and rotate arrow
          * Calls a method to iterate drop-down list items
          */
-
         openDropMenu: function () {
             obj.getSelectHead().addEventListener("click", function () {
                 obj.getDropMenu().classList.toggle("open");
@@ -34,13 +31,12 @@ let Select = function (node) {
             });
 
             obj.getItemsDropMenu();
-            obj.outsitdeClose();
+            obj.clickOutsideBlock();
         },
 
         /**
          * Hidden the drop-down list
          */
-
         closeDropMenu: function () {
             obj.getDropMenu().classList.remove("open");
             obj.getSelectHead().classList.remove("arrow-up");
@@ -49,7 +45,6 @@ let Select = function (node) {
         /**
          * Iterate the drop-down list items and calls the method for changeText each
          */
-
         getItemsDropMenu: function () {
             let items = obj.getDropMenu().querySelectorAll(".select__item");
 
@@ -62,7 +57,6 @@ let Select = function (node) {
          * Takes the value of the current element and changes the title
          * @param event
          */
-
         changeText: function (event) {
             let currentText = event.target.innerHTML;
             obj.getSelectHead().innerHTML = currentText;
@@ -72,8 +66,7 @@ let Select = function (node) {
         /**
          * Closes the menu if you do not choose any items drop-list menu
          */
-
-        outsitdeClose: function () {
+        clickOutsideBlock: function () {
             document.addEventListener("click", function (event) {
                 let e = node;
 
@@ -86,7 +79,6 @@ let Select = function (node) {
         /**
          * Entry point
          */
-
         init: function () {
             obj.openDropMenu();
         }
@@ -103,7 +95,6 @@ let Select = function (node) {
  * Iterate all select box and create new object for each
  * @type {NodeList}
  */
-
 let allSelects = document.querySelectorAll('[data-type="select"]');
 
 [].forEach.call(allSelects, function (select) {
